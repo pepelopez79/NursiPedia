@@ -10,6 +10,7 @@ import android.app.TimePickerDialog
 import com.torredelrey.nursipedia.R
 import android.content.pm.ActivityInfo
 import android.content.pm.PackageManager
+import android.media.MediaPlayer
 import androidx.core.app.NotificationCompat
 import com.torredelrey.nursipedia.Constantes
 import androidx.appcompat.app.AppCompatActivity
@@ -18,6 +19,8 @@ import androidx.core.app.NotificationManagerCompat
 import com.torredelrey.nursipedia.databinding.ActivityDetalleNotaBinding
 
 class DetalleNotaActivity : AppCompatActivity() {
+
+    private lateinit var mediaPlayer: MediaPlayer
 
     private val gson = Gson()
 
@@ -28,6 +31,9 @@ class DetalleNotaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(enlace.root)
+
+        // Sonido Notificación
+        mediaPlayer = MediaPlayer.create(this, R.raw.sonido_notificacion)
 
         // No permitir la rotación de pantalla
         requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
@@ -85,13 +91,10 @@ class DetalleNotaActivity : AppCompatActivity() {
 
                     // Mostrar Notificación
                     with(NotificationManagerCompat.from(applicationContext)) {
-                        if (ActivityCompat.checkSelfPermission(
-                                applicationContext,
-                                Manifest.permission.POST_NOTIFICATIONS
-                            ) != PackageManager.PERMISSION_GRANTED
-                        ) {
+                        if (ActivityCompat.checkSelfPermission(applicationContext, Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
                             return@postDelayed
                         }
+                        mediaPlayer.start()
                         notify(notificationId, builder.build())
                     }
                 }, tiempoRecordatorio - tiempoActual)
@@ -101,6 +104,11 @@ class DetalleNotaActivity : AppCompatActivity() {
             true
         )
         timePickerDialog.show()
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        mediaPlayer.release()
     }
 
 }
