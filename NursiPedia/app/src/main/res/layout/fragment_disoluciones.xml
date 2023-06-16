@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".formulas.DisolucionesFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/txtCM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="60dp"
+                android:background="@drawable/estilo_secciones"
+                android:ems="16"
+                android:inputType="numberDecimal"
+                android:maxLength="50"
+                android:padding="10dp"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblDescCM"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+                android:autofillHints="" />
+
+            <TextView
+                android:id="@+id/lblCM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:text="@string/cm"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/lblDescCM"
+                app:layout_constraintStart_toStartOf="@+id/lblDescCM"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/lblDescVD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/volumen_de_la_disolucion"
+                app:layout_constraintEnd_toEndOf="@+id/txtVD"
+                app:layout_constraintStart_toStartOf="@+id/txtVD"
+                app:layout_constraintTop_toBottomOf="@+id/lblVD" />
+
+            <EditText
+                android:id="@+id/txtVD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="60dp"
+                android:background="@drawable/estilo_secciones"
+                android:ems="16"
+                android:inputType="numberDecimal"
+                android:maxLength="50"
+                android:padding="10dp"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblDescVD"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+                android:autofillHints="" />
+
+            <TextView
+                android:id="@+id/lblDescCM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/cantidad_de_medicamento"
+                app:layout_constraintEnd_toEndOf="@+id/txtCM"
+                app:layout_constraintStart_toStartOf="@+id/txtCM"
+                app:layout_constraintTop_toBottomOf="@+id/lblCM" />
+
+            <TextView
+                android:id="@+id/lblVD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/vd"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/lblDescVD"
+                app:layout_constraintStart_toStartOf="@+id/lblDescVD"
+                app:layout_constraintTop_toBottomOf="@+id/txtCM" />
+
+            <Button
+                android:id="@+id/btnCalcularDisoluciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/calcular"
+                app:layout_constraintEnd_toEndOf="@+id/txtCD"
+                app:layout_constraintStart_toStartOf="@+id/txtCD"
+                app:layout_constraintTop_toBottomOf="@+id/txtCD"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/txtFormulaDisoluciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:text="@string/formula_disoluciones"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/btnCalcularDisoluciones"
+                app:layout_constraintStart_toStartOf="@+id/btnCalcularDisoluciones"
+                app:layout_constraintTop_toBottomOf="@+id/btnCalcularDisoluciones" />
+
+            <EditText
+                android:id="@+id/txtCD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="60dp"
+                android:alpha="0.7"
+                android:background="@drawable/estilo_secciones"
+                android:ems="16"
+                android:enabled="false"
+                android:inputType="numberDecimal"
+                android:maxLength="50"
+                android:padding="10dp"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblDescCD"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+                android:autofillHints="" />
+
+            <TextView
+                android:id="@+id/lblCD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/cd"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/lblDescCD"
+                app:layout_constraintStart_toStartOf="@+id/lblDescCD"
+                app:layout_constraintTop_toBottomOf="@+id/txtVD" />
+
+            <TextView
+                android:id="@+id/lblDescCD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/concentracion_de_la_disolucion"
+                app:layout_constraintEnd_toEndOf="@+id/txtCD"
+                app:layout_constraintStart_toStartOf="@+id/txtCD"
+                app:layout_constraintTop_toBottomOf="@+id/lblCD" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

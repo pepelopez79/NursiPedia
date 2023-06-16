@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".formulas.PerdidasInsensiblesFragment" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/lblFP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:text="@string/fp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/lblDescFP"
+                app:layout_constraintStart_toStartOf="@+id/lblDescFP"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/lblDescFP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/factor_de_perdidas_insensibles"
+                app:layout_constraintEnd_toEndOf="@+id/spnFP"
+                app:layout_constraintStart_toStartOf="@+id/spnFP"
+                app:layout_constraintTop_toBottomOf="@+id/lblFP" />
+
+            <TextView
+                android:id="@+id/lblPI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/pi"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/lblDescPI"
+                app:layout_constraintHorizontal_bias="0.486"
+                app:layout_constraintStart_toStartOf="@+id/lblDescPI"
+                app:layout_constraintTop_toBottomOf="@+id/txtP" />
+
+            <TextView
+                android:id="@+id/lblDescPI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/perdidas_insensibles"
+                app:layout_constraintEnd_toEndOf="@+id/txtPI"
+                app:layout_constraintStart_toStartOf="@+id/txtPI"
+                app:layout_constraintTop_toBottomOf="@+id/lblPI" />
+
+            <EditText
+                android:id="@+id/txtPI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="60dp"
+                android:alpha="0.7"
+                android:background="@drawable/estilo_secciones"
+                android:ems="16"
+                android:enabled="false"
+                android:inputType="numberDecimal"
+                android:maxLength="50"
+                android:padding="10dp"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblDescPI"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+                android:autofillHints="" />
+
+            <TextView
+                android:id="@+id/lblP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/p"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/lblDescP"
+                app:layout_constraintStart_toStartOf="@+id/lblDescP"
+                app:layout_constraintTop_toBottomOf="@+id/spnFP" />
+
+            <TextView
+                android:id="@+id/lblDescP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/peso"
+                app:layout_constraintEnd_toEndOf="@+id/txtP"
+                app:layout_constraintStart_toStartOf="@+id/txtP"
+                app:layout_constraintTop_toBottomOf="@+id/lblP" />
+
+            <EditText
+                android:id="@+id/txtP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="60dp"
+                android:background="@drawable/estilo_secciones"
+                android:ems="16"
+                android:inputType="numberDecimal"
+                android:maxLength="50"
+                android:padding="10dp"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblDescP"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+                android:autofillHints="" />
+
+            <Button
+                android:id="@+id/btnCalcularPerdidasInsensibles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/calcular"
+                app:layout_constraintEnd_toEndOf="@+id/spnFP"
+                app:layout_constraintStart_toStartOf="@+id/spnFP"
+                app:layout_constraintTop_toBottomOf="@+id/txtPI"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/txtFormulaPerdidasInsensibles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:text="@string/formula_perdidas_insensibles"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/btnCalcularPerdidasInsensibles"
+                app:layout_constraintStart_toStartOf="@+id/btnCalcularPerdidasInsensibles"
+                app:layout_constraintTop_toBottomOf="@+id/btnCalcularPerdidasInsensibles" />
+
+            <Spinner
+                android:id="@+id/spnFP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="60dp"
+                android:spinnerMode="dropdown"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblDescFP"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

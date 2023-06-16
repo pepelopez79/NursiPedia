@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".formulas.GastoCardiacoFragment" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/lblVS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/vs"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/lblDescVS"
+                app:layout_constraintStart_toStartOf="@+id/lblDescVS"
+                app:layout_constraintTop_toBottomOf="@+id/txtFC" />
+
+            <TextView
+                android:id="@+id/lblDescVS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/volumen_sistolico"
+                app:layout_constraintEnd_toEndOf="@+id/txtVS"
+                app:layout_constraintStart_toStartOf="@+id/txtVS"
+                app:layout_constraintTop_toBottomOf="@+id/lblVS" />
+
+            <EditText
+                android:id="@+id/txtFC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="60dp"
+                android:background="@drawable/estilo_secciones"
+                android:ems="16"
+                android:inputType="numberDecimal"
+                android:maxLength="50"
+                android:padding="10dp"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView20"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+                android:autofillHints="" />
+
+            <TextView
+                android:id="@+id/lblFC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:text="@string/fc"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/textView20"
+                app:layout_constraintStart_toStartOf="@+id/textView20"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/frecuencia_cardiaca"
+                app:layout_constraintEnd_toEndOf="@+id/txtVS"
+                app:layout_constraintStart_toStartOf="@+id/txtVS"
+                app:layout_constraintTop_toBottomOf="@+id/lblFC" />
+
+            <EditText
+                android:id="@+id/txtVS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="60dp"
+                android:background="@drawable/estilo_secciones"
+                android:ems="16"
+                android:inputType="numberDecimal"
+                android:maxLength="50"
+                android:padding="10dp"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblDescVS"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+                android:autofillHints="" />
+
+            <TextView
+                android:id="@+id/lblGC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/gc"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/lblDescGC"
+                app:layout_constraintStart_toStartOf="@+id/lblDescGC"
+                app:layout_constraintTop_toBottomOf="@+id/txtVS" />
+
+            <TextView
+                android:id="@+id/lblDescGC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/gasto_cardiaco"
+                app:layout_constraintEnd_toEndOf="@+id/txtGC"
+                app:layout_constraintStart_toStartOf="@+id/txtGC"
+                app:layout_constraintTop_toBottomOf="@+id/lblGC" />
+
+            <EditText
+                android:id="@+id/txtGC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="60dp"
+                android:alpha="0.7"
+                android:background="@drawable/estilo_secciones"
+                android:ems="16"
+                android:enabled="false"
+                android:inputType="numberDecimal"
+                android:maxLength="50"
+                android:padding="10dp"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblDescGC"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+                android:autofillHints="" />
+
+            <Button
+                android:id="@+id/btnCalcularGastoCardiaco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/calcular"
+                app:layout_constraintEnd_toEndOf="@+id/txtGC"
+                app:layout_constraintStart_toStartOf="@+id/txtGC"
+                app:layout_constraintTop_toBottomOf="@+id/txtGC"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/txtFormulaGastoCardiaco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:text="@string/formula_gasto_cardiaco"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/btnCalcularGastoCardiaco"
+                app:layout_constraintStart_toStartOf="@+id/btnCalcularGastoCardiaco"
+                app:layout_constraintTop_toBottomOf="@+id/btnCalcularGastoCardiaco" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

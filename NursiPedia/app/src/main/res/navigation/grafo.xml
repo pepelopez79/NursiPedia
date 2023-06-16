@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/grafo"
+    app:startDestination="@+id/navigation_medicamentos">
+
+    <fragment
+        android:id="@+id/navigation_medicamentos"
+        android:name="com.torredelrey.nursipedia.medicamentos.MedicamentosFragment"
+        android:label="@string/titulo_medicamentos"
+        tools:layout="@layout/fragment_medicamentos" >
+        <action
+            android:id="@+id/action_navigation_medicamentos_to_detalleMedicamentoFragment"
+            app:destination="@id/detalleMedicamentoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_formulas"
+        android:name="com.torredelrey.nursipedia.formulas.FormulasFragment"
+        android:label="@string/titulo_formulas"
+        tools:layout="@layout/fragment_formulas" >
+        <action
+            android:id="@+id/action_navigation_formulas_to_infusionesFragment"
+            app:destination="@id/infusionesFragment" />
+        <action
+            android:id="@+id/action_navigation_formulas_to_reglaDeTresFragment"
+            app:destination="@id/reglaDeTresFragment" />
+        <action
+            android:id="@+id/action_navigation_formulas_to_perdidasInsensiblesFragment"
+            app:destination="@id/perdidasInsensiblesFragment" />
+        <action
+            android:id="@+id/action_navigation_formulas_to_IMCFragment"
+            app:destination="@id/IMCFragment" />
+        <action
+            android:id="@+id/action_navigation_formulas_to_gastoCardiacoFragment"
+            app:destination="@id/gastoCardiacoFragment" />
+        <action
+            android:id="@+id/action_navigation_formulas_to_disolucionesFragment"
+            app:destination="@id/disolucionesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detalleMedicamentoFragment"
+        android:name="com.torredelrey.nursipedia.medicamentos.DetalleMedicamentoFragment"
+        android:label="@string/titulo_detalle_medicamento"
+        tools:layout="@layout/fragment_detalle_medicamento">
+        <argument
+            android:name="medicamento"
+            app:argType="com.torredelrey.nursipedia.medicamentos.Medicamento" />
+    </fragment>
+    <fragment
+        android:id="@+id/infusionesFragment"
+        android:name="com.torredelrey.nursipedia.formulas.InfusionesFragment"
+        android:label="@string/titulo_infusiones"
+        tools:layout="@layout/fragment_infusiones" />
+    <fragment
+        android:id="@+id/cuentaFragment"
+        android:name="com.torredelrey.nursipedia.usuarios.CuentaFragment"
+        android:label="@string/titulo_cuenta"
+        tools:layout="@layout/fragment_cuenta" />
+    <fragment
+        android:id="@+id/reglaDeTresFragment"
+        android:name="com.torredelrey.nursipedia.formulas.ReglaDeTresFragment"
+        android:label="@string/titulo_regla_de_tres"
+        tools:layout="@layout/fragment_regla_de_tres" />
+    <fragment
+        android:id="@+id/perdidasInsensiblesFragment"
+        android:name="com.torredelrey.nursipedia.formulas.PerdidasInsensiblesFragment"
+        android:label="@string/titulo_perdidas_insensibles"
+        tools:layout="@layout/fragment_perdidas_insensibles" />
+    <fragment
+        android:id="@+id/IMCFragment"
+        android:name="com.torredelrey.nursipedia.formulas.IMCFragment"
+        android:label="@string/titulo_imc"
+        tools:layout="@layout/fragment_i_m_c" />
+    <fragment
+        android:id="@+id/gastoCardiacoFragment"
+        android:name="com.torredelrey.nursipedia.formulas.GastoCardiacoFragment"
+        android:label="@string/titulo_gasto_cardiaco"
+        tools:layout="@layout/fragment_gasto_cardiaco" />
+    <fragment
+        android:id="@+id/disolucionesFragment"
+        android:name="com.torredelrey.nursipedia.formulas.DisolucionesFragment"
+        android:label="@string/titulo_disoluciones"
+        tools:layout="@layout/fragment_disoluciones" />
+</navigation>

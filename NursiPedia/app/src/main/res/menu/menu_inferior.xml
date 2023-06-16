@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_medicamentos"
+        android:icon="@drawable/medicamento"
+        android:title="@string/titulo_medicamentos" />
+
+    <item
+        android:id="@+id/navigation_formulas"
+        android:icon="@drawable/calculo"
+        android:title="@string/titulo_formulas" />
+
+</menu>

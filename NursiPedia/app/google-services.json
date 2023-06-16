@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "690348491977",
+    "project_id": "nursipedia-2023",
+    "storage_bucket": "nursipedia-2023.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:690348491977:android:5b6a273d10082ab5dcf918",
+        "android_client_info": {
+          "package_name": "com.torredelrey.nursipedia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "690348491977-87da4dbttra3pn0tk3turjaln4lrls5t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8ClNf3sAX620VeLlT75lXP89cistxogI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "690348491977-87da4dbttra3pn0tk3turjaln4lrls5t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

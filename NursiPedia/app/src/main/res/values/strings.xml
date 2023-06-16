@@ -1,0 +1,70 @@
+<resources>
+    <string name="nombre_app">NursiPedia</string>
+    <string name="titulo_medicamentos">Medicamentos</string>
+    <string name="titulo_detalle_medicamento">Detalle Medicamento</string>
+    <string name="titulo_formulas">Fórmulas</string>
+    <string name="titulo_infusiones">Infusiones</string>
+    <string name="titulo_disoluciones">Disoluciones</string>
+    <string name="titulo_perdidas_insensibles">Pérdidas Insensibles</string>
+    <string name="titulo_imc">Índice de Masa Corporal</string>
+    <string name="titulo_regla_de_tres">Regla de Tres</string>
+    <string name="titulo_gasto_cardiaco">Gasto Cardíaco</string>
+    <string name="titulo_configuracion">Configuración</string>
+    <string name="titulo_usuario">Usuario</string>
+    <string name="titulo_registro">Registrarse</string>
+    <string name="titulo_cuenta">Cuenta</string>
+    <string name="titulo_notas">Notas</string>
+    <string name="email">Email</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="repetir_email">Repetir Email</string>
+    <string name="repetir_contrasena">Repetir Contraseña</string>
+    <string name="iniciar_sesion">Iniciar Sesión</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="cerrar_sesion">Cerrar Sesión</string>
+    <string name="volver">Volver</string>
+    <string name="medicacion">Medicación</string>
+    <string name="salud_corporal">Salud Corporal</string>
+    <string name="otras">Otras</string>
+    <string name="calcular">Calcular</string>
+    <string name="formula_infusiones">H x V = VAI</string>
+    <string name="formula_disoluciones">CD = CM / VD</string>
+    <string name="formula_perdidas_insensibles">PI = P * FP</string>
+    <string name="formula_imc">IMC = P / A²</string>
+    <string name="formula_regla_de_tres">x = A * B / C</string>
+    <string name="formula_gasto_cardiaco">GC = FC * VS</string>
+    <string name="imc">IMC</string>
+    <string name="v">V</string>
+    <string name="velocidad_de_infusion">Velocidad de Infusión (ml/h)</string>
+    <string name="h">H</string>
+    <string name="horas">Horas</string>
+    <string name="vai">VAI</string>
+    <string name="volumen_a_infundir">Volumen a Infundir (ml)</string>
+    <string name="cm">CM</string>
+    <string name="cantidad_de_medicamento">Cantidad de Medicamento (mg)</string>
+    <string name="cd">CD</string>
+    <string name="concentracion_de_la_disolucion">Concentración de la Disolución (mg/ml)</string>
+    <string name="vd">VD</string>
+    <string name="volumen_de_la_disolucion">Volumen de la Disolución (ml)</string>
+    <string name="fp">FP</string>
+    <string name="factor_de_perdidas_insensibles">Factor de Pérdidas Insensibles (ml/kg/día)</string>
+    <string name="pi">PI</string>
+    <string name="perdidas_insensibles">Pérdidas Insensibles (ml)</string>
+    <string name="p">P</string>
+    <string name="peso">Peso (kg)</string>
+    <string name="a">A</string>
+    <string name="altura">Altura (m)²</string>
+    <string name="b">B</string>
+    <string name="c">C</string>
+    <string name="x">x</string>
+    <string name="vs">VS</string>
+    <string name="volumen_sistolico">Volumen Sistólico (ml/latido)</string>
+    <string name="fc">FC</string>
+    <string name="frecuencia_cardiaca">Frecuencia Cardíaca (latidos/min)</string>
+    <string name="gc">GC</string>
+    <string name="gasto_cardiaco">Gasto Cardíaco (ml/min/kg)</string>
+    <string name="nombre">Nombre</string>
+    <string name="nombre_comercial">Nombre Comercial</string>
+    <string name="via_de_administracion">Vía de Administración</string>
+    <string name="proposito_o_finalidad">Propósito o Finalidad</string>
+    <string name="advertencias">Advertencias</string>
+</resources>
